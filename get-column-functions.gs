@@ -1,11 +1,11 @@
 function getColumnA(inputRow, inputSheetCode) {
-    return inputRow[letterToColumnStart0('B')];
+    return inputRow[ColumnNames.letterToColumnStart0('B')];
 }
 
 function getColumnB(inputRow, inputSheetCode) {
     switch (inputSheetCode){
         case 'IF':
-            return inputRow[letterToColumnStart0('C')];
+            return inputRow[ColumnNames.letterToColumnStart0('C')];
         case 'RD':
             return "Australian Tax Office";
         default:
@@ -16,9 +16,9 @@ function getColumnB(inputRow, inputSheetCode) {
 function getColumnC(inputRow, inputSheetCode) {
     switch (inputSheetCode){
         case 'IF':
-            return inputRow[letterToColumnStart0('E')];
+            return inputRow[ColumnNames.letterToColumnStart0('E')];
         case 'RD':
-            return inputRow[letterToColumnStart0('D')];
+            return inputRow[ColumnNames.letterToColumnStart0('D')];
         default:
             return null;
     }
@@ -27,9 +27,9 @@ function getColumnC(inputRow, inputSheetCode) {
 function getColumnD(inputRow, inputSheetCode) {
     switch (inputSheetCode){
         case 'IF':
-            return inputRow[letterToColumnStart0('F')];
+            return inputRow[ColumnNames.letterToColumnStart0('F')];
         case 'RD':
-            return inputRow[letterToColumnStart0('E')];
+            return inputRow[ColumnNames.letterToColumnStart0('E')];
         default:
             return null;
     }
@@ -37,9 +37,9 @@ function getColumnD(inputRow, inputSheetCode) {
 function getColumnE(inputRow, inputSheetCode) {
     switch (inputSheetCode){
         case 'IF':
-            return inputRow[letterToColumnStart0('H')];
+            return inputRow[ColumnNames.letterToColumnStart0('H')];
         case 'RD':
-            return inputRow[letterToColumnStart0('G')];
+            return inputRow[ColumnNames.letterToColumnStart0('G')];
         default:
             return null;
     }
@@ -47,9 +47,9 @@ function getColumnE(inputRow, inputSheetCode) {
 function getColumnF(inputRow, inputSheetCode) {
     switch (inputSheetCode){
         case 'IF':
-            return inputRow[letterToColumnStart0('J')];
+            return inputRow[ColumnNames.letterToColumnStart0('J')];
         case 'RD':
-            return inputRow[letterToColumnStart0('I')];
+            return inputRow[ColumnNames.letterToColumnStart0('I')];
         default:
             return null;
     }
@@ -65,9 +65,9 @@ function getColumnG(inputRow, inputSheetCode){
 function getColumnH(inputRow, inputSheetCode) {
     switch (inputSheetCode){
         case 'IF':
-            return inputRow[letterToColumnStart0('L')];
+            return inputRow[ColumnNames.letterToColumnStart0('L')];
         case 'RD':
-            return inputRow[letterToColumnStart0('K')];
+            return inputRow[ColumnNames.letterToColumnStart0('K')];
         default:
             return null;
     }
@@ -75,9 +75,9 @@ function getColumnH(inputRow, inputSheetCode) {
 function getColumnI(inputRow, inputSheetCode) {
     switch (inputSheetCode){
         case 'IF':
-            return inputRow[letterToColumnStart0('N')];
+            return inputRow[ColumnNames.letterToColumnStart0('N')];
         case 'RD':
-            return inputRow[letterToColumnStart0('M')];
+            return inputRow[ColumnNames.letterToColumnStart0('M')];
         default:
             return null;
     }
@@ -91,9 +91,9 @@ function getColumnJ(inputRow, inputSheetCode) {
 function getColumnK(inputRow, inputSheetCode) {
     switch (inputSheetCode){
         case 'IF':
-            return inputRow[letterToColumnStart0('P')];
+            return inputRow[ColumnNames.letterToColumnStart0('P')];
         case 'RD':
-            return inputRow[letterToColumnStart0('O')];
+            return inputRow[ColumnNames.letterToColumnStart0('O')];
         default:
             return null;
     }
@@ -105,12 +105,12 @@ function getColumnL(inputRow, inputSheetCode) {
 function getColumnM(inputRow, inputSheetCode) {
     switch (inputSheetCode){
         case 'IF':
-            if(inputRow[letterToColumnStart0('X')] === 'No')
-                return inputRow[letterToColumnStart0('S')] + inputRow[letterToColumnStart0('U')];
+            if(inputRow[ColumnNames.letterToColumnStart0('X')] === 'No')
+                return inputRow[ColumnNames.letterToColumnStart0('S')] + inputRow[ColumnNames.letterToColumnStart0('U')];
             else
-                return inputRow[letterToColumnStart0('S')];
+                return inputRow[ColumnNames.letterToColumnStart0('S')];
         case 'RD':
-            return inputRow[letterToColumnStart0('R')] + inputRow[letterToColumnStart0('T')];
+            return inputRow[ColumnNames.letterToColumnStart0('R')] + inputRow[ColumnNames.letterToColumnStart0('T')];
         default:
             return null;
     }
@@ -122,9 +122,9 @@ function getColumnN(inputRow, inputSheetCode) {
 function getColumnO(inputRow, inputSheetCode) {
     switch (inputSheetCode){
         case 'IF':
-            return inputRow[letterToColumnStart0('W')];
+            return inputRow[ColumnNames.letterToColumnStart0('W')];
         case 'RD':
-            return inputRow[letterToColumnStart0('V')];
+            return inputRow[ColumnNames.letterToColumnStart0('V')];
         default:
             return null;
     }
